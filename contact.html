@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact System Deployments | CarePulse</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for professional modern icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. COMPULSORY HEADER & NAVIGATION -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fa-solid fa-heart-pulse animated-pulse"></i>
+                <span>Care<span class="highlight">Pulse</span></span>
+            </div>
+            <nav class="navbar">
+                <a href="index.html#home">Home</a>
+                <a href="about.html">About System</a>
+                <a href="index.html#features">Core Features</a>
+                <a href="index.html#departments">Specialties</a>
+                <a href="index.html#stats">Our Impact</a>
+                <a href="index.html#testimonials">Reviews</a>
+            </nav>
+            <div class="header-cta">
+                <a href="index.html#portal" class="btn btn-secondary">Patient Portal</a>
+                <a href="index.html#book" class="btn btn-primary">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. CONTACT HERO INTRO -->
+        <section class="hero-section" style="padding-top: 140px; min-height: auto; padding-bottom: 40px;">
+            <div class="container text-center">
+                <span class="badge">Enterprise Inquiries</span>
+                <h1 style="font-size: 3rem; margin-bottom: 15px;">Connect With Our Engineers</h1>
+                <p class="subtitle" style="max-width: 600px; margin: 0 auto; color: var(--text-muted);">
+                    Have questions about HIPAA compliance, pricing models, or setting up a localized clinic sandbox? Drop us a message below.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. CONTACT FORM & INFO INTERFACE -->
+        <section class="portal-section" style="padding-top: 20px;">
+            <div class="container portal-grid" style="gap: 40px;">
+                
+                <!-- Left Box: Interactive Form -->
+                <div class="portal-card secure-staff" style="background: var(--bg-surface); color: var(--text-main); border: 1px solid rgba(0,0,0,0.05);">
+                    <h2 style="margin-bottom: 20px; font-size: 1.8rem;">Send a Message</h2>
+                    <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 16px;">
+                        <div style="display: flex; gap: 16px;">
+                            <div style="flex: 1;">
+                                <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 0.9rem;">Full Name</label>
+                                <input type="text" placeholder="Dr. Alex Carter" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
+                            </div>
+                            <div style="flex: 1;">
+                                <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 0.9rem;">Clinic/Facility Name</label>
+                                <input type="text" placeholder="Apex Care Partners" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 0.9rem;">Work Email Address</label>
+                            <input type="email" placeholder="alex@facility.com" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #fff;">
+                        </div>
+
+                        <div>
+                            <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 0.9rem;">Inquiry Focus</label>
+                            <select style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: pointer;">
+                                <option>Sandbox/Demo Request</option>
+                                <option>Enterprise License Pricing</option>
+                                <option>Data Migration / EHR Porting</option>
+                                <option>Technical Integration Support</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label style="display: block; margin-bottom: 6px; font-weight: 600; font-size: 0.9rem;">Operational Scope / Note</label>
+                            <textarea rows="4" placeholder="Tell us about your current facility workflow scale..." required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; background: #fff; resize: none; font-family: inherit;"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="padding: 14px; font-weight: 600; border: none; cursor: pointer; justify-content: center; margin-top: 10px;">
+                            Dispatch Inquiry <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right Box: Direct Corporate Communication Info -->
+                <div class="portal-card secure-patient" style="display: flex; flex-direction: column; justify-content: center;">
+                    <h2>Direct Communication Lines</h2>
+                    <p style="margin-bottom: 30px;">Skip the form entirely if your system needs are immediate or require formal procurement documentation pipelines.</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 24px;">
+                        <div style="display: flex; align-items: flex-start; gap: 15px;">
+                            <div class="icon-box" style="margin: 0; min-width: 50px; height: 50px; font-size: 1.2rem;"><i class="fa-solid fa-headset"></i></div>
+                            <div>
+                                <h4 style="font-weight: 700; margin-bottom: 4px;">Deployment Helpdesk</h4>
+                                <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem;">Available Mon-Fri 8AM - 6PM PST for active implementations.</p>
+                                <strong style="display: block; margin-top: 4px;">+1 (555) 234-5678</strong>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: flex-start; gap: 15px;">
+                            <div class="icon-box" style="margin: 0; min-width: 50px; height: 50px; font-size: 1.2rem;"><i class="fa-solid fa-server"></i></div>
+                            <div>
+                                <h4 style="font-weight: 700; margin-bottom: 4px;">EHR Compliance Office</h4>
+                                <p style="color: rgba(255,255,255,0.85); font-size: 0.95rem;">For encryption verification and direct hospital system sign-offs.</p>
+                                <strong style="display: block; margin-top: 4px;">compliance@carepulse-sys.com</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. COMPULSORY FOOTER (Links, Address, Socials, Description) -->
+    <footer id="contact" class="main-footer">
+        <div class="container footer-grid">
+            <!-- Col 1: System Description -->
+            <div class="footer-col description-col">
+                <div class="logo">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <span>Care<span class="highlight">Pulse</span></span>
+                </div>
+                <p class="footer-desc">
+                    CarePulse is a premium secure patient care ERP system dedicated to digitizing clinical workflows, protecting sensitive data records, and bridging communications seamlessly between practitioners and patients globally.
+                </p>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div class="footer-col links-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About Platform</a></li>
+                    <li><a href="index.html#features">Core System Features</a></li>
+                    <li><a href="index.html#departments">Clinical Specialties</a></li>
+                    <li><a href="index.html#portal">Secure Portals</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Address / Contact Info -->
+            <div class="footer-col address-col">
+                <h3>Corporate Address</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>104 Medical Innovation Boulevard, Building C, Suite 400, San Francisco, CA 94107</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1 (555) 234-5678</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>deployments@carepulse-sys.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Social Media Links -->
+            <div class="footer-col social-col">
+                <h3>Follow Our Updates</h3>
+                <p>Stay connected with our engineering releases and safety upgrades.</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 CarePulse Patient Care Systems LLC. All Global Rights Reserved. Protected under HIPAA Compliant Architectures.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
