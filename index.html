@@ -3,324 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarePulse | Modern Patient Care & Management System</title>
-    <!-- External CSS -->
+    <title>MedCare | Patient Management System</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for professional modern icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- 1. COMPULSORY HEADER & NAVIGATION -->
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo">
-                <i class="fa-solid fa-heart-pulse animated-pulse"></i>
-                <span>Care<span class="highlight">Pulse</span></span>
-            </div>
-            <nav class="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About System</a>
-                <a href="#features">Core Features</a>
-                <a href="#departments">Specialties</a>
-                <a href="#stats">Our Impact</a>
-                <a href="#testimonials">Reviews</a>
-            </nav>
-            <div class="header-cta">
-                <a href="#portal" class="btn btn-secondary">Patient Portal</a>
-                <a href="#book" class="btn btn-primary">Book Appointment</a>
-            </div>
-        </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Med<span>Care</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="doctors.html">Find Doctors</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="emr.html">Medical Records</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html" class="cta-btn">Login / Register</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <!-- 2. HERO SECTION (With Floating/Animated Visual Element) -->
-        <section id="home" class="hero-section">
-            <div class="container hero-grid">
-                <div class="hero-content">
-                    <span class="badge">Next-Gen Healthcare Management</span>
-                    <h1>Empowering Clinics. <br>Elevating Patient Care.</h1>
-                    <p>A unified digital ecosystem engineered to streamline clinical workflows, automate appointment scheduling, and deliver secure, instant access to patient medical records.</p>
-                    <div class="hero-actions">
-                        <a href="#features" class="btn btn-primary btn-lg">Explore Features</a>
-                        <a href="#contact" class="btn btn-outline btn-lg"><i class="fa-solid fa-play"></i> Watch Demo</a>
-                    </div>
-                </div>
-                <div class="hero-image-wrapper">
-                    <!-- Modern animated graphic representation using CSS vectors and icons -->
-                    <div class="animated-graphic-container">
-                        <div class="circle-bg"></div>
-                        <div class="floating-card card-1">
-                            <i class="fa-solid fa-calendar-check"></i>
-                            <div>
-                                <h4>10k+ Appointments</h4>
-                                <p>Automated monthly</p>
-                            </div>
-                        </div>
-                        <div class="floating-card card-2">
-                            <i class="fa-solid fa-file-shield"></i>
-                            <div>
-                                <h4>Secured Records</h4>
-                                <p>100% Encrypted EHR</p>
-                            </div>
-                        </div>
-                        <div class="main-graphic-icon">
-                            <i class="fa-solid fa-laptop-medical"></i>
-                        </div>
-                    </div>
-                </div>
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Your Health, Our Top Priority</h1>
+            <p>Streamline your healthcare experience. Connect with elite medical professionals, track your dynamic digital medical records, and coordinate instant bookings online.</p>
+            <div class="hero-buttons">
+                <a href="appointment.html" class="btn-primary">Book an Appointment</a>
+                <a href="doctors.html" class="btn-secondary">Explore Departments</a>
             </div>
-        </section>
-
-        <!-- 3. ABOUT THE SYSTEM SECTION -->
-        <section id="about" class="about-section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2>About CarePulse System</h2>
-                    <p class="subtitle">Transforming healthcare operations with innovative digital tools designed for medical professionals and patients alike.</p>
-                </div>
-                <div class="about-grid">
-                    <div class="about-card">
-                        <div class="icon-box"><i class="fa-solid fa-hospital-user"></i></div>
-                        <h3>Patient-Centric Design</h3>
-                        <p>Allows patients to easily self-schedule, update histories, view prescriptions, and directly contact care teams from any digital device.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="icon-box"><i class="fa-solid fa-user-doctor"></i></div>
-                        <h3>Physician Dashboard</h3>
-                        <p>Provides doctors optimized timelines of patient visits, comprehensive lab charts, quick-vitals logging, and smart digital prescription tracking.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="icon-box"><i class="fa-solid fa-sliders"></i></div>
-                        <h3>Administrative Power</h3>
-                        <p>Equips front-desk and billing teams with powerful multi-doctor calendar views, automated queues, and real-time invoicing status.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. CORE FEATURES SECTION (CRUD & Operations overview) -->
-        <section id="features" class="features-section">
-            <div class="container">
-                <div class="features-wrapper">
-                    <div class="features-text">
-                        <h2>Comprehensive Operations Managed Effortlessly</h2>
-                        <p>Our platform takes care of the technical heavy lifting, allowing your medical staff to focus exclusively on what matters most: delivering exceptional patient care.</p>
-                        
-                        <ul class="feature-list">
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <div>
-                                    <strong>Real-Time Dynamic Scheduling:</strong> Avoid double-bookings seamlessly with dynamic updates across all desks.
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <div>
-                                    <strong>Complete EHR Management:</strong> Create, Read, Update, and Archive detailed digital clinical histories seamlessly.
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <div>
-                                    <strong>Automated E-Reminders:</strong> Reduce clinic no-shows by up to 45% via automated patient alerts.
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="features-display">
-                        <div class="tech-stack-box">
-                            <h3>Integrated Clinical Workspace</h3>
-                            <div class="ui-mockup">
-                                <div class="mock-row"><span>Patient Name</span><span class="mock-badge success">Active</span></div>
-                                <div class="mock-line"></div>
-                                <div class="mock-line short"></div>
-                                <div class="mock-buttons">
-                                    <span class="m-btn view">View History</span>
-                                    <span class="m-btn edit">Update Vitals</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. MEDICAL SPECIALTIES & DEPARTMENTS SECTION -->
-        <section id="departments" class="dept-section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2>Tailored Modules for Every Department</h2>
-                    <p class="subtitle">CarePulse configurations seamlessly adapt to specialized workflows across various clinical branches.</p>
-                </div>
-                <div class="dept-grid">
-                    <div class="dept-box">
-                        <i class="fa-solid fa-heart-pulse"></i>
-                        <h3>Cardiology</h3>
-                        <p>Integrates directly with diagnostic metrics and historical ECG reports.</p>
-                    </div>
-                    <div class="dept-box">
-                        <i class="fa-solid fa-baby"></i>
-                        <h3>Pediatrics</h3>
-                        <p>Custom growth charting tracks metrics along with comprehensive immunization charts.</p>
-                    </div>
-                    <div class="dept-box">
-                        <i class="fa-solid fa-brain"></i>
-                        <h3>Neurology</h3>
-                        <p>Deep medical history tracking simplifies multi-stage cognitive care workflows.</p>
-                    </div>
-                    <div class="dept-box">
-                        <i class="fa-solid fa-tooth"></i>
-                        <h3>Dental Care</h3>
-                        <p>Visual tooth-mapping modules integrated directly into patient charts.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. LIVE IMPACT STATS SECTION -->
-        <section id="stats" class="stats-section">
-            <div class="container stats-grid">
-                <div class="stat-item">
-                    <h3>99.9%</h3>
-                    <p>System Uptime Guaranteed</p>
-                </div>
-                <div class="stat-item">
-                    <h3>2.5M+</h3>
-                    <p>Electronic Records Hosted</p>
-                </div>
-                <div class="stat-item">
-                    <h3>15 mins</h3>
-                    <p>Average Patient Wait Time Reduced</p>
-                </div>
-                <div class="stat-item">
-                    <h3>4.9/5</h3>
-                    <p>Administrative Satisfaction Score</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 7. PATIENT & PROVIDER PORTAL SECTION -->
-        <section id="portal" class="portal-section">
-            <div class="container portal-grid">
-                <div class="portal-card secure-patient">
-                    <h2>For Patients</h2>
-                    <p>Access your health records, view lab reports, track your medications, and coordinate easily with your attending specialists.</p>
-                    <a href="#" class="btn btn-secondary">Login to Portal <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="portal-card secure-staff">
-                    <h2>For Medical Personnel</h2>
-                    <p>Review daily appointment lists, log updates to patient medical charts, generate billing tallies, and dispatch e-prescriptions.</p>
-                    <a href="#" class="btn btn-primary">Staff Dashboard <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 8. REVIEWS & TESTIMONIALS SECTION -->
-        <section id="testimonials" class="testimonial-section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2>What Healthcare Leaders Are Saying</h2>
-                </div>
-                <div class="testimonial-grid">
-                    <div class="testimonial-card">
-                        <p class="quote">"Transitioning to this patient management system slashed our data entry times in half. The multi-doctor scheduler works flawlessly across our locations."</p>
-                        <div class="user-info">
-                            <div class="user-details">
-                                <h4>Dr. Sarah Jenkins</h4>
-                                <p>Chief Medical Director, Apex Health</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <p class="quote">"Patients rave about booking appointments online. The interface feels completely straightforward, modern, and trustworthy on both mobile and desktop views."</p>
-                        <div class="user-info">
-                            <div class="user-details">
-                                <h4>Marcus Vance</h4>
-                                <p>Clinic Operations Administrator</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 9. APPOINTMENT BOOKING/CALL TO ACTION SECTION -->
-        <section id="book" class="cta-booking-section">
-            <div class="container text-center">
-                <div class="cta-inner">
-                    <h2>Ready to Modernize Your Care Facility?</h2>
-                    <p>Contact our system deployment engineers today to arrange a structured sandbox tour tailored precisely to your clinical operational footprint.</p>
-                    <div class="cta-buttons">
-                        <a href="#" class="btn btn-primary btn-lg">Request a Demo</a>
-                        <a href="#contact" class="btn btn-outline-white btn-lg">Contact Sales</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=500&q=80" alt="Medical Team">
+        </div>
     </main>
 
-    <!-- 10. COMPULSORY FOOTER (Links, Address, Socials, Description) -->
-    <footer id="contact" class="main-footer">
-        <div class="container footer-grid">
-            <!-- Col 1: System Description -->
-            <div class="footer-col description-col">
-                <div class="logo">
-                    <i class="fa-solid fa-heart-pulse"></i>
-                    <span>Care<span class="highlight">Pulse</span></span>
-                </div>
-                <p class="footer-desc">
-                    CarePulse is a premium secure patient care ERP system dedicated to digitizing clinical workflows, protecting sensitive data records, and bridging communications seamlessly between practitioners and patients globally.
-                </p>
+    <section class="container">
+        <div class="page-header">
+            <h2>Why Choose MedCare?</h2>
+        </div>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Expert Doctors</h3>
+                <p>Direct digital interaction with highly verified board-certified clinical specialists across multiple disciplines.</p>
             </div>
-
-            <!-- Col 2: Quick Links -->
-            <div class="footer-col links-col">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Platform</a></li>
-                    <li><a href="#features">Core System Features</a></li>
-                    <li><a href="#departments">Clinical Specialties</a></li>
-                    <li><a href="#portal">Secure Portals</a></li>
-                </ul>
+            <div class="card">
+                <h3>Instant Booking</h3>
+                <p>Avoid waiting lists. Secure your physical or virtual time-slot immediately within minutes.</p>
             </div>
-
-            <!-- Col 3: Address / Contact Info -->
-            <div class="footer-col address-col">
-                <h3>Corporate Address</h3>
-                <ul class="contact-info">
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>104 Medical Innovation Boulevard, Building C, Suite 400, San Francisco, CA 94107</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <span>+1 (555) 234-5678</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>deployments@carepulse-sys.com</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Col 4: Social Media Links -->
-            <div class="footer-col social-col">
-                <h3>Follow Our Updates</h3>
-                <p>Stay connected with our engineering releases and safety upgrades.</p>
-                <div class="social-icons">
-                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                </div>
+            <div class="card">
+                <h3>Secure EMR</h3>
+                <p>Your Electronic Medical Records are highly encrypted, safe, and permanently accessible by you.</p>
             </div>
         </div>
+    </section>
 
-        <div class="footer-bottom text-center">
-            <p>&copy; 2026 CarePulse Patient Care Systems LLC. All Global Rights Reserved. Protected under HIPAA Compliant Architectures.</p>
-        </div>
+    <footer>
+        <p>&copy; 2026 MedCare Patient Care System. All rights reserved.</p>
     </footer>
 
 </body>

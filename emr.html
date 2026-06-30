@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Health Records | MedCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Med<span>Care</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Find Doctors</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="emr.html" class="active">Medical Records</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html" class="cta-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h2>Your Electronic Health Profile</h2>
+            <p>Access historical diagnoses, prescriptions, and official clinic summaries.</p>
+        </div>
+
+        <div class="grid-3" style="margin-bottom: 3rem;">
+            <div class="card" style="border-left: 4px solid var(--primary-color);">
+                <h4>Blood Group</h4>
+                <p style="font-size: 1.8rem; font-weight: 700; color: var(--primary-dark);">O Positive (O+)</p>
+            </div>
+            <div class="card" style="border-left: 4px solid var(--success);">
+                <h4>Allergies Reported</h4>
+                <p style="font-size: 1.2rem; font-weight: 600; color: var(--danger);">Penicillin, Peanuts</p>
+            </div>
+            <div class="card" style="border-left: 4px solid var(--secondary-color);">
+                <h4>Primary Care Physician</h4>
+                <p style="font-size: 1.2rem; font-weight: 600;">Dr. Elena Rostova</p>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <h3 style="margin-bottom: 1rem; color: var(--primary-dark);">Clinical Diagnosis History</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date Record Added</th>
+                        <th>Condition / Diagnosis</th>
+                        <th>Attending Specialist</th>
+                        <th>Prescribed Action Plan</th>
+                        <th>Documentation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jan 14, 2026</td>
+                        <td>Acute Seasonal Asthmatic Bronchitis</td>
+                        <td>Dr. Elena Rostova</td>
+                        <td>Albuterol Inhaler every 4-6 hours</td>
+                        <td><a href="#" style="color:var(--primary-color); font-weight:600;">Download Report PDF</a></td>
+                    </tr>
+                    <tr>
+                        <td>Oct 22, 2025</td>
+                        <td>Mild Hypertension Screening Evaluation</td>
+                        <td>Dr. Sarah Jenkins</td>
+                        <td>Low sodium diet modifications + Followup</td>
+                        <td><a href="#" style="color:var(--primary-color); font-weight:600;">Download Report PDF</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MedCare Patient Care System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

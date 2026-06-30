@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Appointment | MedCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Med<span>Care</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Find Doctors</a></li>
+                <li><a href="appointment.html" class="active">Book Appointment</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="emr.html">Medical Records</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html" class="cta-btn">Login / Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h2>Schedule a Consultation</h2>
+            <p>Please populate the parameters below to establish a session confirmation.</p>
+        </div>
+
+        <div class="form-container">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="department">Select Department</label>
+                    <select id="department" required>
+                        <option value="">-- Choose Specialization --</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="general">General Medicine</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctor">Select Professional</label>
+                    <select id="doctor" required>
+                        <option value="">-- Select Available Doctor --</option>
+                        <option value="dr-jenkins">Dr. Sarah Jenkins</option>
+                        <option value="dr-patel">Dr. Amit Patel</option>
+                        <option value="dr-rostova">Dr. Elena Rostova</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Preferred Time-Slot</label>
+                    <input type="time" id="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Reason for Visit / Symptoms</label>
+                    <textarea id="notes" rows="4" placeholder="Briefly describe your health condition..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%;">Confirm Secure Booking</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MedCare Patient Care System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

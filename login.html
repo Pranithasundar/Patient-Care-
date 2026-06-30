@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gateway Portal | MedCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Med<span>Care</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Find Doctors</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="emr.html">Medical Records</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html" class="active cta-btn">Login / Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <h2>Secure Gateway Access</h2>
+            <p>Access your primary healthcare management profile interface dashboard securely.</p>
+        </div>
+
+        <div class="form-container">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="email">Registered Email Address</label>
+                    <input type="email" id="email" placeholder="name@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Account Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-group" style="display: flex; justify-content: space-between; align-items: center;">
+                    <label style="font-weight: 500; font-size: 0.9rem; cursor: pointer;">
+                        <input type="checkbox" style="width: auto; margin-right: 0.5rem;"> Keep me authenticated
+                    </label>
+                    <a href="#" style="color: var(--primary-color); font-size: 0.9rem;">Forgot Access Credentials?</a>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%; margin-bottom: 1rem;">Authenticate Session</button>
+                
+                <p style="text-align: center; font-size: 0.9rem; color: var(--text-muted);">
+                    New to the MedCare System? <a href="#" style="color: var(--primary-color); font-weight: 600;">Create Patient Profile</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MedCare Patient Care System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

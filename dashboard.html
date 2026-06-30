@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard | MedCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Med<span>Care</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Find Doctors</a></li>
+                <li><a href="appointment.html">Book Appointment</a></li>
+                <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="emr.html">Medical Records</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html" class="cta-btn">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header" style="text-align: left;">
+            <h2>Welcome Back, Patient</h2>
+            <p>Overview of your upcoming appointments and healthcare track.</p>
+        </div>
+
+        <div class="table-responsive">
+            <h3 style="margin-bottom: 1rem; color: var(--primary-dark);">Scheduled Consultations</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Appointment ID</th>
+                        <th>Doctor Name</th>
+                        <th>Department</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#APT-9942</td>
+                        <td>Dr. Sarah Jenkins</td>
+                        <td>Cardiology</td>
+                        <td>July 05, 2026</td>
+                        <td>10:30 AM</td>
+                        <td><span class="badge success">Confirmed</span></td>
+                    </tr>
+                    <tr>
+                        <td>#APT-9811</td>
+                        <td>Dr. Amit Patel</td>
+                        <td>Neurology</td>
+                        <td>August 12, 2026</td>
+                        <td>02:15 PM</td>
+                        <td><span class="badge pending">Pending Approval</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MedCare Patient Care System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
